@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bare - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio
+            </a>
+          </li>
+          <li class="nav-item active">
+              <a class="nav-link" href="#">Alumnos</a>
+              <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calulos.html">Calculos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row p-5">
+        <div class="col-8">
+            <div id="alumnosDinamicos" class="row col d-flex justify-content-center">
+            </div>
+          </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                    <!--Usuario-->
+                  <label for="nombre">Nombre de Usuario</label>
+                  <input id="nombre" type="text" placeholder="Escribe tu nombre...">
+                  <small id="nombreSmall" class="form-text text-muted">Usuario completo</small>
+                  <!--Correo-->
+                  <label for="email">Email de Usuario</label>
+                  <input id="email" type="email" placeholder="Escribe tu Email...">
+                  <small id="emailSmall" class="form-text text-muted">No olvides el @ </small>
+                  <!--Contraseña-->
+                  <label for="password">Password de Usuario</label>
+                  <input id="password" type="password" placeholder="Escribe tu Password...">
+                  <small id="passwordSmall" class="form-text text-muted">Algo sencillo de recordar</small> 
+                </div>
+                <div class="form-check" id="clase">
+                  <input class="clasesEscuela" type="checkbox" name="clase" value="Moviles">Programacion para Moviles <br>
+                  <input class="clasesEscuela" type="checkbox" name="clase" value="IA">Inteligencia artificial <br>
+                  <input class="clasesEscuela" type="checkbox" name="clase" value="Redes">Redes y telecomunicacion <br>
+                  <input class="clasesEscuela" type="checkbox" name="clase" value="Integracion">Integracion de hardware y software <br>
+                  <input class="clasesEscuela" type="checkbox" name="clase" value="Emprendimiento">Cultura emprendedora <br>
+                </div>
+                <div class="text-right">
+                  <button type="button" class="btn btn-primary" onclick="Registrar()">Aceptar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="Javascript.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bare - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="alumnos.html">Alumnos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="calulos.html">Calculos</a>
+              <span class="sr-only">(current)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row p-5">
+      <div class="col-8">
+        <div id="materiasDinamicas" class="row col d-flex justify-content-center">
+        </div>
+        </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h2>Calificaciones ISDI</h2>
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre de Usuario</label>
+                <input id="nombre" type="text" placeholder="Escribe tu nombre...">
+                <label for="carrera">Carrera que cursas</label>
+                <input id="carrera" type="email" placeholder="Escribe tu carrera...">
+                <label for="redes">Calificación redes</label>
+                <input id="redes" class="materiasEvaluar" type="number" placeholder="Redes...">
+                <label for="basesDatos">Calificación bases de datos</label>
+                <input id="basesDatos" class="materiasEvaluar" type="number" placeholder="Bases de datos...">
+                <label for="matematicas">Calificación Matemáticas</label>
+                <input id="matematicas" class="materiasEvaluar" type="number" placeholder="matemáticas...">
+                <label for="movil">Calificación programación móvil</label>
+                <input id="movil" class="materiasEvaluar" type="number" placeholder="móvil...">
+                <label for="web">Calificación programación web</label>
+                <input id="web" class="materiasEvaluar" type="number" placeholder="Desarrollo web...">
+              </div>
+              <div class="text-right">
+                <button type="button" class="btn btn-primary" onclick="promedio()">Aceptar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="calculos.js"></script>
+
+</body>
+
+</html>

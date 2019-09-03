@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bare - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="alumnos.html">Alumnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="calulos.html">Calculos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row p-5">
+      <div class="col-8">
+        <div class="card w-100" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title" id="p1">Usuario</h5>
+            <h6 class="card-subtitle mb-2 text-muted" id="p2">Tipo de usuario</h6>
+            <p class="card-text" id="p3">Clases de usuario</p>
+          </div>
+        </div>
+          <div class="row col d-flax justify-content-center pt-2">
+            <div class="p-2">
+              <div class="card" style=" width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Salon: A1</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Grupo asignado: ISDI</h6>
+                  <p class="card-text">Capacidad del salon: 20</p>
+                  <a href="#" class="card-link">Revisar</a>
+                </div>
+              </div>
+            </div>
+              <div class="p-2">
+                  <div class="card" style=" width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Salon: A2</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Grupo asignado: ISDI</h6>
+                      <p class="card-text">Capacidad del salon: 40</p>
+                      <a href="#" class="card-link">Revisar</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div id="tarjetasDinamicas" class="row col d-flex justify-content-center">
+            </div>
+        </div>
+      <div class="col-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="nombre">Nombre de Usuario</label>
+                <input id="nombre" type="text" placeholder="Escribe tu nombre..." id="inputForm">
+                <small id="nombreSmall" class="form-text text-muted">Escribe el nombre con el que te diste de alta
+              </div>
+              <div class="form-group">
+                <input type="radio" id="r1" name="tipo" value="estudiante" checked> Estudiante
+                <input type="radio" id="r2" name="tipo" value="maestro"> Maestro
+              </div>
+              <div class="form-check" id="clase">
+                <input class="clasesEscuela" type="checkbox" name="clase" value="Moviles">Programacion para Moviles <br>
+                <input class="clasesEscuela" type="checkbox" name="clase" value="IA">Inteligencia artificial <br>
+                <input class="clasesEscuela" type="checkbox" name="clase" value="Redes">Redes y telecomunicacion <br>
+                <input class="clasesEscuela" type="checkbox" name="clase" value="Integracion">Integracion de hardware y software <br>
+                <input class="clasesEscuela" type="checkbox" name="clase" value="Emprendimiento">Cultura emprendedora <br>
+              </div>
+              <div class="text-right">
+                <button type="button" class="btn btn-primary" onclick="saludos(document.getElementById('nombre').value)">Aceptar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="Javascript.js"></script>
+
+</body>
+
+</html>
